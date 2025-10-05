@@ -1,0 +1,87 @@
+body {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.parent {
+    position: relative;
+    height: 100vh;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers main-content */
+    align-items: center;
+}
+
+.circle {
+    height: 750px;
+    width: 750px;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    right: -375px;
+    top: -50px;
+    z-index: 1; /* stays behind */
+}
+
+.header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;  /* overlap enabled */
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 2; /* above circle */
+    padding: 10px 25px;
+    background: transparent; /* lets circle show behind */
+    color: black;
+}
+
+.click-here {
+    background-color: white;
+    color: grey;
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.40);
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+.main-content {
+    position: relative;
+    z-index: 2; /* above circle */
+    text-align:center;
+    margin-top: 80px; }
+
+.main-content-text{
+    font-size: 25px;
+}
+
+#name {
+    color: grey;
+    font-size: 150px;
+    font-weight: bold;
+}
+
+.form-floating {
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.40);
+
+}
+/* Bootstrap form input hover + focus effect */
+.form-control:hover,
+.form-control:focus {
+  background-color: #f0f0f0 ; 
+  border-color: #ccc ;        
+    box-shadow: none ;          
+  outline: none ;            
+  transition: background-color 0.3s ease;
+}
+
+#login-btn{
+    background-color: grey;
+    color:white;
+
+}
+
